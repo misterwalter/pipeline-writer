@@ -1,5 +1,5 @@
 # pipeline-writer
-*As much bad fiction as you could possibly ask for*
+*As much mediocre fiction as you could possibly ask for*
 
 This is an experimental script that I put together to see if I could get AI to write a novel. It technically does that, but I am compelled by honor to be clear from the start that it does not write good novels, rather it tends towards pretentious and repetitive novellas, which is still pretty cool IMO. If you try to use this to generate slop to sell or otherwise spread around the internet, you will be making the world a worse place and you will not get any money from the exercise. I haven't let any of my "real" writing near this, and once you experiment with it, I suspect you will understand why.
 
