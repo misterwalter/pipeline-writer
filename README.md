@@ -22,4 +22,4 @@ It's also worth noting that the stories that it generates are likely to be uncop
 
 
 ## Future Action
-I have no specific plans to update this, but I probably will a little bit. I tweak it from time to time.
+I have no specific plans to update this, but I probably will a little bit. I tweak it from time to time. If you have contributions to offer then I'd be very curious to see them!
