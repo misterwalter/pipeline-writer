@@ -1,15 +1,15 @@
 # pipeline-writer
-*As much mediocre fiction as you could possibly ask for*
+*As much fiction as you could possibly ask for*
 
-This is an experimental script that I put together to see if I could get AI to write a novel. It technically does that, but I am compelled by honor to be clear from the start that it does not write good novels, rather it tends towards pretentious and repetitive novellas, which is still pretty cool IMO. If you try to use this to generate slop to sell or otherwise spread around the internet, you will be making the world a worse place and you will not get any money from the exercise. I haven't let any of my "real" writing near this, and once you experiment with it, I suspect you will understand why.
+This is an experimental tool that I put together to see if I could get AI to write a novel. It technically does that, but I am compelled by honor to be clear from the start that it does not write good novels, rather it tends towards pretentious and repetitive novellas, which is still pretty cool IMO. I haven't let any of my "real" writing near this, and once you experiment with it, I suspect you will understand why.
 
 All that said, I learned a lot of interesting and fun lessons from the process, so I wanted to share this to share those lessons!
 
 ## Requirements
 Before running this script, ensure you have the following:
 - Python 3.x: Standard installation.
-- Ollama: Must be installed and running locally (ollama serve).
-- RAM: This is extremely memory-intensive. The recommended model requires approximately 60GB of RAM. It will likely fail or crash on systems with less memory.
+- Ollama: Must be installed and running locally.
+- RAM: This is extremely memory-intensive. The recommended model requires approximately 60GB of RAM. It will likely fail or crash on systems with less memory, or if you try to use smaller models.
 - Network: An internet connection is required initially to download the model weights. Note that the initial download for the recommended model will be quite slow as it is massive. However once the pieces are in place there is no need for an ongoing internet connection.
 - Requests Library: Install via pip install requests.
 
@@ -28,7 +28,6 @@ Inside that folder, create a _seed.md file containing your story concept.
 
 Tip: Include TARGET_LENGTH: [int] at the top of the seed file to specify the number of chapters. The AI will not always hold to this, but you can influence its decision a bit this way.
 Quality: The more detail you provide in _seed.md, the better the resulting _outline.md will be.
-
 
 (Optional) Create _prompt.md for specific guidance for the AI, or _sample.md to provide a prose sample for the AI to emulate. Be sure to keep these short though as they will take up precious context that is needed for the outline and previous chapters.
 
@@ -58,7 +57,7 @@ Context Limits: The script truncates previous chapters to fit the context window
 You Can Write Too: Treat the outputs as a rough draft. The AI can write, but you can probably make its writing better. So get in there!
 Hardware: If you experience crashes, your system likely ran out of RAM. This script is not optimized for low-memory environments.
 Don't Be Afraid To Pause: It can be distracting and wasteful to have your server cranking out chapters from an outline that you are actively editing. If you detect a problem with how the AI is working on a story, don't hesitate to pause it so it isn't burning cycles for no reason as you deliberate.
-
+Abliterated Model: In my experience, most storytelling models will skip over conflict and bad times in a story if they are not abliterated, and you may even end up getting "chapters" that are just the bot refusing to continue the story more often than you might think. Abliterated models are largely necessary for that reason, though you of course remain free to try whatever model you like with it. 
 
 ## Obsidian For Convenience
 The script was meant to run within a synced obsidian notes folder, so all user files are `.md` files. Given the long generation times and high RAM usage, I do not recommend running this on a computer that you intend to keep using actively while it's running. Therefore everything is optimized for using Obsidian Sync from another device to instruct the AI and do the needful in terms of editing, writing, and of course, reading.
